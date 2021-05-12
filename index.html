@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/app.css">
+
+  <title>Frontend Mentor | Todo app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+  <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+  <div id="mainTodo">
+    <div id="mainTodo__top">
+    </div>
+    <div id="mainTodo__bottom">
+    </div>
+    <div id="mainTodo__todo">
+      <div id="mainTodo__todo__tags">
+        <div id="mainTodo__todo__tags-first">
+          <h1 id="mainTodo__todo__tags-first--h1"> Todo</h1>
+          <span id="mainTodo__todo__tags-first--span"> <img src="images/icon-sun.svg" alt=""></span>
+        </div>
+
+        <div class="formDiv ">
+          <li class="lis ">
+            <div class="lis__div-span1 -icon "></div>
+            <form>
+              <input type="text" value="" placeholder="Create a new todo">
+              <input type="submit" id="submitbtn">
+            </form>
+            <span class="lis__div-span1 -cross">x</span>
+          </li>
+        </div>
+
+        <div id="mainTodo__todo__tags-radius">
+
+          <ul id="mainTodo__todo__tags-second">
+
+            <div class="lis__div todoItem lis__div__first">
+              <li class="lis">
+                <div class="lis__div-span1 -icon">
+                  <span class="spanNew"></span>
+                </div>
+                <p class="p">
+                  Memorize Quran
+                </p>
+                <span class="lis__div-span1 -cross">X</span>
+              </li>
+            </div>
+            <div class="lis__div todoItem ">
+              <li class="lis">
+                <div class="lis__div-span1 -icon">
+                  <span class="spanNew"></span>
+                </div>
+                <p class="p">
+                  studying
+                  History</p>
+                <span class="lis__div-span1 -cross">X</span>
+              </li>
+            </div>
+            <div class="lis__div todoItem">
+              <li class="lis">
+                <div class="lis__div-span1 -icon">
+                  <span class="spanNew"></span>
+                </div>
+                <p class="p">
+                  Hadiths</p>
+                <span class="lis__div-span1 -cross">X</span>
+              </li>
+            </div>
+            <div class="lis__div todoItem">
+              <li class="lis">
+                <div class="lis__div-span1 -icon">
+                  <span class="spanNew"></span>
+                </div>
+                <p class="p">
+                  Workout</p>
+                <span class="lis__div-span1 -cross">X</span>
+              </li>
+            </div>
+
+          </ul>
+          <div class="endPart">
+            <div class="item-left-div">
+              <p class="items-left">
+                4 items left</p>
+            </div>
+            <div class="buttons">
+              <a   class="  ">
+                <button class="normal--button active allTodos">All</button></a>
+              <a   class="normal--button  ">
+                <button class=" normal--button activeTodo">
+                  Active
+                </button>
+              </a>
+              <a class="normal--button"><button class="normal--button completedTodos">Completed</button></a>
+            </div>
+            <div class="clearTasksnormal--button ">
+              <button class="normal--button clearComplete">
+                clear
+                completed</button>
+            </div>
+          </div>
+        </div>
+        All
+        Active
+        Completed
+
+        Clear Completed
+
+        Drag and drop to reorder
+        list
+
+      </div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
